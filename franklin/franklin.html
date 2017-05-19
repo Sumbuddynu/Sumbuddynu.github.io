@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title> Franklin | Weather Site Plan</title>
         <meta name="Franklin Weather Site Plan" content="This page broadcasts the weather over the Franklin area">
+        <link rel="stylesheet" type="text/css" href="franklin_layout.css">
+
     </head>
     <body>
         <div id="wrapper">
@@ -12,30 +14,42 @@
                 <h1>Feeling Lucky?</h1>
                 <p class="tagline">Local Weather</p>
             </header>
-            <nav><a href="">Home</a>   |   <a href="">Franklin</a>  |   <a href="">Greenville</a>   |   <a href="">Springfield</a>   |   <a href="">Search</a></nav>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Franklin</a></li>
+                    <li><a href="">Greenville</a></li>
+                    <li><a href="">Springfield</a></li>
+                    <li><a href="">Search</a></li>
+                </ul>
+                    </nav>
             <main>
                 <article>
-                    <section>
-                        <!--<img src="" alt="Current Conditions" style="width:34px; height:28px;">--><h3>Current Conditions</h3>
-                        <h4>Wind</h4> 1 - 5 MPH Southwest
-                        <h4>Precipitation</h4>0in
-                    </section>
+                    <section class="overview">
+                        <h3>Franklin, ID</h3>
 
-                    <section>
-                        <!--<img src="" alt="Site Plan logo" style="width:34px; height:28px;">--><h3>Franklin, ID</h3>
-                        <!--<img src="" alt="Background" style="width:304px; height:288px;">-->
                         <section>
                             <h4>17</h4>
-                            <!--<img src="" alt="Weather Picture indicator" style="width:34px; height:28px;">-->17 / 3
+                            17 / 3
                         </section>
                         Sunny
                     </section>
 
-                    <section>
-                        <!--<img src="" alt="Hourly Forecast Picture" style="width:34px; height:28px;">--><h3>Hourly Forecast</h3>
-                        4:00 AM : 69<br>
-                        5:00 AM : 70<br>
-                        6:00 AM : 69
+                    <section class="cur_conditions">
+                        <h3>Current Conditions</h3>
+                        <h4>Wind:</h4>
+                        <p>1 - 5 MPH Southwest</p>
+                        <h4>Precipitation:</h4>
+                        <p>0in</p>
+                    </section>
+
+                    <section class="hourly">
+                        <h3>Hourly Forecast</h3>
+                        <ul>
+                            <li>4:00 AM : 69</li>
+                            <li>5:00 AM : 70</li>
+                            <li>6:00 AM : 69</li>
+                        </ul>
                     </section>
                 </article>
             </main>
