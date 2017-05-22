@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
+
 body {
-    font-family: 'helvetica';
-    font-size: 1.1em;
+    font-family: "helvetica";
+        font-size: 1.1em;
 }
 
 h1,
@@ -10,28 +11,29 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Sansita'
+    font-family: "Sansita";
 }
 
-header,
-footer {
+header, footer {
     background-color: #A6D8DB;
 }
 
 nav a:link {
     text-decoration: none;
     color: #47556F;
-    background-color: #F07C6C
+    background-color: #F07C6C;
 }
 
-
-#cur_condition {background-color: rgba(200,200,200,.6);
+#cur_conditions {
+    background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
-    border-radius: 5px;}
+    border-radius: 5px;
+}
 
-*{
-    box-sizing: border-box;
+* {
+    box-sizing: border-box; /* changes width property
+    to total width instead of content width */
 }
 
 article,
@@ -43,7 +45,9 @@ section,
 main,
 figcaption,
 figure {
-    display: block;
+    display: block; /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
 }
 
 body {
@@ -52,35 +56,47 @@ body {
     background-color: salmon;
 }
 
-
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     background-image: url("sunny-winter.jpg");
     background-size: cover;
+    margin: auto;
 }
+
 nav ul {
     display: flex;
+    justify-content: center;
     list-style-type: none;
 }
+
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
-nav a: link {
-    text-decoration: none;
-    color: #47556F;}
-
-}
 
 h1 {
     text-align: right;
 }
-.title h1 + h3 {
+
+.title h1 + h1 {
     text-align: right;
 }
-#hourly {visibility: hidden;}
-#footer{text-align: center;}
+.item {
+    width: 100%;
+}
+
+#hourly {
+    visibility: hidden;
+}
+
+#nav-color {
+    background-color: aqua;
+}
+
+#footer {
+    text-align: center;
+}
