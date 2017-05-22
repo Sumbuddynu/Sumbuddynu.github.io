@@ -8,54 +8,57 @@
 
     </head>
     <body>
-        <div id="wrapper">
             <header>
-                <img src="/weather/images/logo-blue.jpg" alt="Weather App logo">
-                <h1>Feeling Lucky?</h1>
-                <p class="tagline">Local Weather</p>
+                <div class="title">
+                    <h1><span>&#9856;</span><span>&#9861;</span> Feeling Lucky?</h1>
+                    <h3>Local Weather</h3>
+                </div>
             </header>
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Franklin</a></li>
-                    <li><a href="">Greenville</a></li>
-                    <li><a href="">Springfield</a></li>
-                    <li><a href="">Search</a></li>
+                    <li><a href="#" title="Go to home page">Home</a></li>
+                    <li><a href="#" title="Go to home page">Franklin</a></li>
+                    <li><a href="#" title="Go to home page">Greenville</a></li>
+                    <li><a href="#" title="Go to home page">Springfield</a></li>
+                    <li><a href="#" title="Go to home page">Search</a></li>
                 </ul>
-                    </nav>
+            </nav>
             <main>
                 <article>
                     <section class="overview">
-                        <h3>Franklin, ID</h3>
-
-                        <section>
-                            <h4>17</h4>
-                            17 / 3
-                        </section>
-                        Sunny
+                        <h1>Franklin, ID</h1>
+                    </section>
+                    <section id="temperature">
+                            <h2 id="temp">17 &#9900;</h2>
+                    </section>
+                    <section>
+                        <h2 id="highlow">&#9728;17 / 3</h2>
+                        <h3 id="summary">Sunny</h3>
                     </section>
 
-                    <section class="cur_conditions">
-                        <h3>Current Conditions</h3>
-                        <h4>Wind:</h4>
-                        <p>1 - 5 MPH Southwest</p>
-                        <h4>Precipitation:</h4>
-                        <p>0in</p>
-                    </section>
+                    </article>
 
-                    <section class="hourly">
-                        <h3>Hourly Forecast</h3>
+                    <article id="cur_conditions">
+                        <h2>Current Conditions</h2>
+                        <div>Wind:
+                            <p>1 - 5 MPH Southwest</p>
+                        </div>
+                        <div id="precipitation">Precipitation:
+                            <p>0in</p>
+                        </div>
+                    </article>
+
+                    <article id="hourly">
+                        <h2>Hourly Forecast</h2>
                         <ul>
                             <li>4:00 AM : 69</li>
                             <li>5:00 AM : 70</li>
                             <li>6:00 AM : 69</li>
                         </ul>
-                    </section>
-                </article>
+                    </article>
             </main>
-            <footer>
-                Copyright Link to Homepage
+            <footer id="footer">
+                &copy; 2017 Maxwell Acquah
             </footer>
-        </div>
     </body>
 </html>

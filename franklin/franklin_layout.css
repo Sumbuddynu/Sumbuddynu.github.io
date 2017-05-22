@@ -1,6 +1,37 @@
-* {
-box-sizing: border-box; /* changes width property
-to total width instead of content width */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+body {
+    font-family: 'helvetica';
+    font-size: 1.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sansita'
+}
+
+header,
+footer {
+    background-color: #A6D8DB;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+    background-color: #F07C6C
+}
+
+
+#cur_condition {background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;}
+
+*{
+    box-sizing: border-box;
 }
 
 article,
@@ -12,23 +43,44 @@ section,
 main,
 figcaption,
 figure {
-display: block; /* just in case we have
-any older browsers that don't recognize
-the HTML5 semantic elements */
+    display: block;
 }
 
 body {
-margin: 0; /* remove any margin from body */
-padding: 0; /* ditto for padding */
-background-color: salmon;
+    margin: 0; /* remove any margin from body */
+    padding: 0; /* ditto for padding */
+    background-color: salmon;
 }
+
 
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-image: url("sunny-winter.jpg");
+    background-size: cover;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+nav a: link {
+    text-decoration: none;
+    color: #47556F;}
+
 }
 
-ul {
-    display: flex;
+h1 {
+    text-align: right;
 }
+.title h1 + h3 {
+    text-align: right;
+}
+#hourly {visibility: hidden;}
+#footer{text-align: center;}
