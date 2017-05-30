@@ -1,36 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
-body {
-    font-family: "helvetica";
-        font-size: 1.1em;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Sansita";
-}
-
-header, footer {
-    background-color: #A6D8DB;
-}
-
-nav a:link {
-    text-decoration: none;
-    color: #47556F;
-    background-color: #F07C6C;
-}
-
-#cur_conditions {
-    background-color: rgba(200,200,200,.6);
-    margin: .2em auto;
-    border: 1px solid;
-    border-radius: 5px;
-}
-
 * {
     box-sizing: border-box; /* changes width property
     to total width instead of content width */
@@ -50,25 +19,61 @@ figure {
     the HTML5 semantic elements */
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, times, generic-family;
+}
+
 body {
     margin: 0; /* remove any margin from body */
     padding: 0; /* ditto for padding */
     background-color: salmon;
+    font-size: 20px;
 }
 
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 0;
     background-image: url("sunny-winter.jpg");
     background-size: cover;
-    margin: auto;
+}
+
+header {
+    background-color: #a2d8da;
 }
 
 nav ul {
     display: flex;
-    justify-content: center;
+    /*height: 50px;*/
+    line-height: 60px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+
+nav a:visited {
+    color: #47556F;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #E7EF61;
+}
+
+nav a:active {
+
 }
 
 nav {
@@ -76,27 +81,44 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-h1 {
-    text-align: right;
+    background-color: #e1816b;
 }
 
 .title h1 + h1 {
     text-align: right;
-}
-.item {
-    width: 100%;
+    margin-top: -.7em;
+    font-size: 1.5em;
 }
 
-#hourly {
+.hourly, .cond > h3 {
     visibility: hidden;
 }
 
-#nav-color {
-    background-color: aqua;
+.cur_conditions {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
 }
 
-#footer {
-    text-align: center;
+.location {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
 }
+
+footer {
+    line-height: 30px;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    background-color: #a2d8da;
+}
+
+.rotate25 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+
