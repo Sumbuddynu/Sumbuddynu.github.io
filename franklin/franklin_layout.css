@@ -142,14 +142,14 @@ footer {
     body {
         margin: 0;  /*remove any margin from body */
         padding: 0;  /*ditto for padding */
-        background-color: salmon; /*#a2d8da;*/
+        background-color: #a2d8da;
         font-size: 20px;
         margin-bottom: -1000em;
         padding-bottom: 0;
     }
     main {
         background-image: url("sunny-winter.jpg");
-        background-size: cover;
+        background-size:auto;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -175,7 +175,7 @@ footer {
         border: .2px solid;
         border-radius: 5px;
         padding: 5px;
-        text-align: center
+        text-align: center;
     }
     .hourly {
         order: 3;
@@ -186,9 +186,10 @@ footer {
         border-radius: 5px;
         padding: 20px;
         padding-top: 0;
-        padding-bottom: 230px;
-        padding-right: 50px;
+        padding-bottom: 233px;
+        padding-right: 130px;
         padding-left: 50px;
+        text-align: left;
     }
     .cur_conditions {
         background-color: rgba(200, 200, 200, .6);
@@ -198,8 +199,8 @@ footer {
         border-radius: 5px;
         padding: 20px;
         padding-top: 0;
-        padding-bottom: 150px;
-        padding-right: 50px;
+        padding-bottom: 235px;
+        padding-right: 100px;
     }
     .hourly,
     .overview > h3 {
@@ -210,9 +211,8 @@ footer {
         list-style-type: none;
     }
     nav {
-        position: absolute;
+        position: fixed;
         bottom: 503px;
-        /*547px*/
         left: 0;
         right: 0;
         background-color: #e1816b;
@@ -295,7 +295,7 @@ footer {
     nav {
         position: absolute;
         bottom: 503px;
-        /*547px*/
+        /*547px
         left: 0;
         right: 0;
         background-color: #e1816b;
