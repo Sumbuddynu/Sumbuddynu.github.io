@@ -138,7 +138,7 @@ footer {
     display: inline-block;
 }
 
-@media only screen and (min-width: 768px) { /*min-width: 768*/
+@media only screen and (min-width: 1080px) { /*min-width: 768*/
     body {
         margin: 0;  /*remove any margin from body */
         padding: 0;  /*ditto for padding */
