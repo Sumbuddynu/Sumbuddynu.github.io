@@ -186,7 +186,9 @@ footer {
         border-radius: 5px;
         padding: 20px;
         padding-top: 0;
-        padding-bottom: 150px;
+        padding-bottom: 230px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
     .cur_conditions {
         background-color: rgba(200, 200, 200, .6);
@@ -200,7 +202,7 @@ footer {
         padding-right: 50px;
     }
     .hourly,
-    .overview>h3 {
+    .overview > h3 {
         visibility: visible;
     }
 
@@ -223,11 +225,11 @@ footer {
     }
 }
 
-@media only screen and (max-width: 320px) {
+/*@media only screen and (device-width: 768px){
     body {
-        margin: 0;  /*remove any margin from body */
-        padding: 0;  /*ditto for padding */
-        background-color: salmon; /*#a2d8da;*/
+        margin: 0;  /*remove any margin from body
+        padding: 0;  /*ditto for padding
+        background-color: salmon; /*#a2d8da;
         font-size: 20px;
         margin-bottom: -1000em;
         padding-bottom: 0;
@@ -304,4 +306,4 @@ footer {
         margin-bottom: 15px;
         background-color: #a2d8da;
     }
-}
+}*/
