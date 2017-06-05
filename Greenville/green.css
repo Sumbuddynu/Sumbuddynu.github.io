@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+* {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, times, generic-family;
+}
+
+body {
+    margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+    /* ditto for padding */
+    background-color: salmon;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0;
+    background-image: url("sunny-winter.jpg");
+    background-size: cover;
+}
+
+header {
+    background-color: #a2d8da;
+}
+
+nav ul {
+    display: flex;
+    /*height: 50px;*/
+    line-height: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #47556F;
+}
+
+nav a:visited {
+    color: #47556F;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #E7EF61;
+}
+
+nav a:active {}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e1816b;
+}
+
+.title h1+h1 {
+    text-align: right;
+    margin-top: -.7em;
+    font-size: 1.5em;
+}
+
+.overview h2,
+.overview h3 {
+    text-align: center;
+}
+
+.overview>h2,
+.overview h3 {
+    color: indianred;
+}
+
+.hourly,
+.overview>h3 {
+    visibility: hidden;
+}
+
+.cur_conditions {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.cond {
+    text-align: right;
+}
+
+.location {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .1em auto;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+footer {
+    line-height: 30px;
+    padding-bottom: 0;
+    margin-bottom: 60px;
+    background-color: #a2d8da;
+}
+
+.rotate25 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+
+@media only screen and (min-width: 1080px) {
+    /*min-width: 768*/
+    body {
+        margin: 0;
+        /*remove any margin from body */
+        padding: 0;
+        /*ditto for padding */
+        background-color: #a2d8da;
+        font-size: 20px;
+        margin-bottom: -1000em;
+        padding-bottom: 0;
+    }
+    main {
+        background-image: url("sunny-winter.jpg");
+        background-size: auto;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-top: 3em;
+        margin-bottom: 0;
+        padding-bottom: 50px;
+        padding-top: 2px;
+    }
+    .title h1 {
+        font-size: 3em;
+    }
+    .title h1+h1 {
+        margin-top: -1em;
+        margin-right: 20em;
+        font-size: 2em;
+    }
+    .overview {
+        order: 2;
+    }
+    .location {
+        background-color: rgba(200, 200, 200, .6);
+        margin: 1px;
+        border: .2px solid;
+        border-radius: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+    .hourly {
+        order: 3;
+        background-color: rgba(200, 200, 200, .6);
+        margin: 0;
+        margin-bottom: -2.5em;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 233px;
+        padding-right: 130px;
+        padding-left: 50px;
+        text-align: left;
+    }
+    .cur_conditions {
+        background-color: rgba(200, 200, 200, .6);
+        margin: 0;
+        margin-bottom: -2.5em;
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 20px;
+        padding-top: 0;
+        padding-bottom: 235px;
+        padding-right: 100px;
+    }
+    .hourly,
+    .overview>h3 {
+        visibility: visible;
+    }
+    .hourly ul {
+        list-style-type: none;
+    }
+    nav {
+        position: fixed;
+        bottom: 503px;
+        left: 0;
+        right: 0;
+        background-color: #e1816b;
+    }
+    footer {
+        line-height: 20px;
+        padding: 20px;
+        margin-bottom: 15px;
+        background-color: #a2d8da;
+    }
+}
