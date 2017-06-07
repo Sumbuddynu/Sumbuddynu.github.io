@@ -43,7 +43,7 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     padding: 0;
-    background-image: url("nicer.jpg");
+    background-image: url("nicer_1000.jpg");
     background-size: cover;
 }
 
@@ -113,9 +113,12 @@ nav {
     text-align: center;
 }
 
-.overview>h2,
+.overview>h2 {
+    color: black;
+}
+
 .overview h3 {
-    color: indianred;
+    color:aqua;
 }
 
 .hourly,
@@ -168,8 +171,8 @@ footer {
         padding-bottom: 0;
     }
     main {
-        background-image: url("nicer.jpg");
-        background-size:cover;
+        background-image: url("nicer_1000.jpg");
+        background-size: 1280px 450px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
