@@ -43,8 +43,25 @@ main {
     flex-flow: column nowrap;
     align-items: center;
     padding: 0;
-    background-image: url("/franklin/sunny-winter.jpg");
+    background-image: url("/Greenville/nicer%20copy.jpg");
     background-size: cover;
+}
+
+#skip a
+{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
+#skip a:focus
+{
+    position:static;
+    width:auto;
+    height:auto;
 }
 
 header {
@@ -96,9 +113,12 @@ nav {
     text-align: center;
 }
 
-.overview>h2,
+.overview>h2 {
+    color: black;
+}
+
 .overview h3 {
-    color: #E7EF61;
+    color:aqua;
 }
 
 .hourly,
@@ -120,10 +140,10 @@ nav {
 
 .location {
     background-color: rgba(200, 200, 200, .6);
-    margin: .2em auto;
+    margin: .1em auto;
     border: 1px solid;
     border-radius: 5px;
-    padding: 10px;
+    padding: 7px;
 }
 
 footer {
@@ -138,18 +158,21 @@ footer {
     display: inline-block;
 }
 
-@media only screen and (min-width: 1080px) { /*min-width: 768*/
+@media only screen and (min-width: 1080px) {
+    /*min-width: 768*/
     body {
-        margin: 0;  /*remove any margin from body */
-        padding: 0;  /*ditto for padding */
+        margin: 0;
+        /*remove any margin from body */
+        padding: 0;
+        /*ditto for padding */
         background-color: #a2d8da;
         font-size: 20px;
         margin-bottom: -1000em;
         padding-bottom: 0;
     }
     main {
-        background-image: url("/franklin/sunny-winter.jpg");
-        background-size:auto;
+        background-image: url("/Greenville/nicer%20copy.jpg");
+        background-size: 1280px 450px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -161,7 +184,7 @@ footer {
     .title h1 {
         font-size: 3em;
     }
-    .title h1 + h1 {
+    .title h1+h1 {
         margin-top: -1em;
         margin-right: 20em;
         font-size: 2em;
@@ -203,10 +226,9 @@ footer {
         padding-right: 100px;
     }
     .hourly,
-    .overview > h3 {
+    .overview>h3 {
         visibility: visible;
     }
-
     .hourly ul {
         list-style-type: none;
     }
