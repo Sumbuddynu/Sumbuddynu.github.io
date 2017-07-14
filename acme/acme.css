@@ -333,13 +333,11 @@ noscript {
 
 .atributet-flex {
     height: 300px;
-    display: -webkit-flex;
     display: flex;
     height: 10px;
     line-height: 10px;
-    -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
+    justify-content: center;
     justify-content: center;
 }
 
@@ -383,7 +381,7 @@ noscript {
     }
 }
 
-@media (min-width: 1001px) {}
+@media (min-width: 1001px) {
 
 .thumbnail {
     width: 100px;
@@ -398,4 +396,5 @@ noscript {
 
 #template {
     font-size: 34px;
+}
 }
