@@ -268,7 +268,7 @@ noscript {
     font-family: "Source Sans Pro";
 }
 
-@media screen and (min-width:750px) {
+@media only screen and (min-width: 1080px) {
 
     rocket-list li {
         display: flex;
