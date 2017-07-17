@@ -3,9 +3,9 @@
     font-family: sans-serif;
     background-image: url(/acme/images/site/background.jpg);
     background-size: cover;
-    max-width: 1100px;
+    /*max-width: 1100px;
     align-content: center;
-    margin: auto;
+    margin: auto;*/
 }
 
 #page {
@@ -17,7 +17,7 @@
     background-color: #fff;
     margin: 0 auto;
     width: 80%;
-    min-width: 600px;
+    /*min-width: 600px;*/
 }
 
 #welcome {
@@ -98,8 +98,8 @@
 }
 
 #nav a:hover {
-    background-color: #808080;
-    color: #000;
+    text-decoration: underline;
+    color: #E7EF61;
 }
 
 .wrapper {
@@ -267,8 +267,8 @@ noscript {
 
 .copyright {
     text-align: center;
-    background-color: #990033;
-    color: #FFFFFF;
+    /*background-color: #990033;*/
+    color: #000000;
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 2px;
@@ -276,125 +276,17 @@ noscript {
     font-family: "Source Sans Pro";
 }
 
-@media (max-width: 320px) {
-    .secondary_header ul li {
-        float: none;
-        margin-top: 28px;
-        margin-left: 0px;
-        width: 100%;
-    }
-    .article {
-        width: 100%;
-        height: auto;
-    }
-    .right_article {
-        width: 100%;
-        height: auto;
-    }
-    .copyright {
-        padding-top: 25px;
-        padding-bottom: 2px;
-        margin-bottom: 2px;
-    }
-    .container .secondary_header {}
-}
+@media screen and (min-width:750px) {
 
-@media (min-width: 321px) and (max-width: 768px) {
-    .secondary_header ul li {
-        float: none;
-        margin-top: 28px;
-        margin-left: 0px;
-        width: 100%;
-    }
-    .article {
-        width: 100%;
-        height: auto;
-    }
-    .right_article {
-        width: 100%;
-        height: auto;
-        padding-bottom: 25px;
-    }
-}
-
-@media only screen and (min-width: 500px) {
-    #tablet {
+    rocket-list li {
         display: flex;
-        width: 30em;
+        font-size: 3em;
     }
-}
-
-@media only screen and (min-width: 1024px) {
-    #desktop {
+    #nav li {
         display: flex;
-        width: 40em;
+        font-size: 14px;
     }
-}
-
-.atributet-flex {
-    height: 300px;
-    display: flex;
-    height: 10px;
-    line-height: 10px;
-    align-items: center;
-    justify-content: center;
-    justify-content: center;
-}
-
-@media (min-width: 769px) and (max-width: 1000px) {
-    .secondary_header {
-        overflow: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .main picture img {
+        height: 5em;
     }
-    .secondary_header ul li {
-        margin-top: 10px;
-        margin-right: 7%;
-        margin-bottom: 10px;
-        margin-left: 7%;
-    }
-    .article {
-        height: auto;
-    }
-    .right_article {
-        height: auto;
-        padding-bottom: 27px;
-    }
-    .placeholder {
-        width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .columns {
-        width: 50%;
-        float: left;
-        padding-left: 0px;
-        padding-top: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
-    }
-    .container .columns p {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-}
-
-@media (min-width: 1001px) {
-
-.thumbnail {
-    width: 100px;
-    border-radius: 200px;
-    height: 100px;
-    margin-left: auto;
-}
-
-.thumbnail_align {
-    text-align: center;
-}
-
-#template {
-    font-size: 34px;
-}
 }
