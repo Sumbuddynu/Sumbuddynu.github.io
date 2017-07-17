@@ -2,7 +2,7 @@
     display: flex;
     font-family: sans-serif;
     background-image: url(/acme/images/site/background.jpg);
-    background-size: cover;
+    background-size:cover;
 }
 
 #page {
@@ -177,14 +177,14 @@ figure {
     clear: left;
 }
 
-.left_article {
+/*.left_article {
     background-color: #FFFFFF;
     width: 60%;
     float: left;
     font-family: "Source Sans Pro";
     color: #343434;
     padding-bottom: 15px;
-}
+}*/
 
 .noDisplay {
     display: none;
@@ -199,11 +199,11 @@ figure {
     text-transform: uppercase;
 }
 
-.right_article {
+/*.right_article {
     width: 40%;
     float: left;
     background-color: #ffffff;
-}
+}*/
 
 #product-content {
     display: flex;
@@ -249,10 +249,6 @@ figure {
     margin: 0;
 }
 
-noscript {
-    color: #fff;
-}
-
 .column_title {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -268,7 +264,7 @@ noscript {
     font-family: "Source Sans Pro";
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 750px){
 
     rocket-list li {
         display: flex;
