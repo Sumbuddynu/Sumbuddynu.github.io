@@ -3,9 +3,6 @@
     font-family: sans-serif;
     background-image: url(/acme/images/site/background.jpg);
     background-size: cover;
-    /*max-width: 1100px;
-    align-content: center;
-    margin: auto;*/
 }
 
 #page {
@@ -17,7 +14,6 @@
     background-color: #fff;
     margin: 0 auto;
     width: 80%;
-    /*min-width: 600px;*/
 }
 
 #welcome {
@@ -133,8 +129,6 @@
 }
 
 #recipes {
-    /*width: 500px;*/
-
 }
 
 #recipes h3 {
@@ -145,7 +139,6 @@
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    /*    flex-grow: 1;*/
     width: 25em;
 }
 
@@ -265,9 +258,8 @@ noscript {
     padding-bottom: 25px;
 }
 
-.copyright {
+.footer {
     text-align: center;
-    /*background-color: #990033;*/
     color: #000000;
     text-transform: uppercase;
     font-weight: lighter;
